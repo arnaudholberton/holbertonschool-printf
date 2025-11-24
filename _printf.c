@@ -2,7 +2,7 @@
 
 /**
  * _printf - prints output according to a format
- * @format: the format string
+ * @format: format string
  * Return: number of characters printed
  */
 int _printf(const char *format, ...)
@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
         if (format[i] == '%')
         {
             i++;
-            if (format[i] == '\0')
+            if (format[i] == '\0') /* % at the end */
                 break;
 
             if (format[i] == 'c')
@@ -46,6 +46,7 @@ int _printf(const char *format, ...)
             }
             else
             {
+                /* Unknown format, print % and the character */
                 count += write(1, "%", 1);
                 count += write(1, &format[i], 1);
             }
