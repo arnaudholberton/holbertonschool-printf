@@ -21,8 +21,13 @@ int _printf(const char *format, ...)
         if (format[i] == '%')
         {
             i++;
-            if (format[i] == '\0') /* % at the end */
-                break;
+
+            /* Case: "%" alone → invalid */
+            if (format[i] == '\0')
+            {
+                va_end(args);
+                return (-1);
+            }
 
             if (format[i] == 'c')
             {
@@ -46,7 +51,7 @@ int _printf(const char *format, ...)
             }
             else
             {
-                /* Unknown format, print % and the character */
+                /* Unknown format */
                 count += write(1, "%", 1);
                 count += write(1, &format[i], 1);
             }
