@@ -38,8 +38,11 @@ int main(void)
 - `main.h`: Header file containing function prototypes and necessary includes.
 - `printf.c`: Implementation of the `_printf` function.
 - `functions.c`: Helper functions for handling different format specifiers.
+### Flowchart
+![Flowchart](image/flowchart.png)
+
 ### Author
+
 - Pemjean Arnaud
 - Roussel James
-### License
-- This project is licensed under the MIT License.
+
