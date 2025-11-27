@@ -14,7 +14,7 @@
 
 
 ### Example
-```c
+```
 #include "main.h"
 
 int main(void)
@@ -34,10 +34,11 @@ int main(void)
 ### Compilation
 - Compile the project using `gcc` with the following command:
 - gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+
 ### Files
 - `main.h`: Header file containing function prototypes and necessary includes.
-- `printf.c`: Implementation of the `_printf` function.
-- `functions.c`: Helper functions for handling different format specifiers.
+- `_printf.c`: Implementation of the `_printf` function.
+
 ### Flowchart
 ![Flowchart](image/flowchart.png)
 
