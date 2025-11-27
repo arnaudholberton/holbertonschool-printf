@@ -8,8 +8,6 @@
 int _printf(const char *format, ...);
 
 /* Utility functions you may use */
-int _putchar(char c);
-int _puts(char *str);
-
+int printd(long int num);
 #endif /* MAIN_H */
 

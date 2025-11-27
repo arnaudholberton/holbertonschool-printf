@@ -5,10 +5,10 @@
  * @num: the integer to print
  * Return: number of characters printed
  */
-int printd(int num)
+int printd(long int num)
 {
 int count = 0;
-int buffer[12];
+long int buffer[12];
 int j = 0;
 if (num < 0)
 {
