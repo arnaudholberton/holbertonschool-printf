@@ -6,5 +6,7 @@
 
 /* Prototype of the main _printf function */
 int _printf(const char *format, ...);
-int printd(int num);
+
+/* Utility functions you may use */
+int printd(long int num);
 #endif /* MAIN_H */
