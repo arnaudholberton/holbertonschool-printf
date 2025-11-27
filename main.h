@@ -6,5 +6,5 @@
 
 /* Prototype of the main _printf function */
 int _printf(const char *format, ...);
-
+int printd(int num);
 #endif /* MAIN_H */
